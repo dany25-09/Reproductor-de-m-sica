@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* Tercera sombra */
+* { /* Se refiere a todos los elementos del html*/
+  box-sizing: border-box; /*incluir padding y border en el cálculo del tamaño total del elemento.*/
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html { /*se refiere al elemento raíz <html>*/
+  font-size: 62.5%; /*1rem equivalente a 10 píxeles (px)*/
+}
+
+.wrapper .wrapper__cards {
+  justify-content: center;
+}
+.wrapper .wrapper__cards .wrapper__cards__previous-song, .wrapper .wrapper__cards .wrapper__cards__next-song {
+  display: none;
+}
+.wrapper .wrapper__cards .wrapper__cards__principal-song {
+  width: 280px;
+  height: 280px;
+}/*# sourceMappingURL=tablet.css.map */

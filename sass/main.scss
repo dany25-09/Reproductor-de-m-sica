@@ -1,0 +1,167 @@
+@import 'variables';
+
+.wrapper{
+    background-color: $primary_color;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 300px auto auto;
+
+    .wrapper__header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-size: 2.5rem;
+            color: $secondary_color;
+            font-weight: 600;
+        }
+    }
+
+    .wrapper__cards{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .wrapper__cards__previous-song{
+            width: 32px;
+            height: 240px;
+            background-color: $primary_color;
+            border-radius: 0px 20px 20px 0px;
+            box-shadow: 7px -1px 10px rgba(255, 255, 255, 0.5),
+            4px -15px 15px rgba(255, 255, 255, 0.5),
+            -10px 15px 15px rgba(0, 0, 0, 0.25);
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 90%;
+                height: 97%;
+                object-fit: cover;
+                border-radius: 0px 20px 20px 0px;
+            }
+        }
+
+        .wrapper__cards__principal-song{
+            @extend .wrapper__cards__previous-song;
+            width: 240px;
+            border-radius: 20px;
+            box-shadow: $shadow;
+            justify-content: center;
+
+            img{
+                width: 95%;
+                height: 90%;
+                border-radius: 20px;
+            }
+        }
+
+        .wrapper__cards__next-song{
+            @extend .wrapper__cards__previous-song;
+            border-radius: 20px 0px 0px 20px;
+            box-shadow: $shadow;
+            justify-content: flex-end;
+
+            img{
+                border-radius: 20px 0px 0px 20px;
+            }
+        }
+    }
+    
+    .wrapper__info-song{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .wrapper__info_song__text{
+            color: $secondary_color;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            h2{
+                font-weight: bolder;
+            }
+
+            h3{
+                font-weight: 600;
+            }
+        }
+
+        .wrapper__info-song__bar{
+            width: 90%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+
+            .wrapper__info-song__bar__range{
+                height: 8px;
+                width: 100%;
+                accent-color: $secondary_color;
+                border-radius: 20px;
+            }
+
+            .wrapper__info-song__bar__num{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 5px;
+    
+                p{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: $secondary_color;
+                }
+            }
+        }
+    }
+
+    .wrapper__buttons{
+        width: 100%;
+        max-width: 950px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 auto;
+
+        .wrapper__buttons__button{
+            background-color: #B2A4FF;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.4),  /* Primera sombra */
+            -10px -10px 15px rgba(255, 255, 255, 0.25), /* Segunda sombra */
+            10px 10px 15px rgba(0, 0, 0, 0.25);        /* Tercera sombra */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg{
+                width: 75%;
+                height: 75%;
+                fill: $secondary_color;
+            }
+        }
+
+        .wrapper__buttons__button.play{
+            width: 65px;
+            height: 65px;
+
+            svg{
+                width: 55%;
+                height: 55%;
+            }
+        }
+    }
+    
+}
+
+

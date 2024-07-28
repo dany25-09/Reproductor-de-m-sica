@@ -1,0 +1,22 @@
+@import 'variables';
+
+
+.wrapper{
+    .wrapper__cards{
+        justify-content: center;
+
+        .wrapper__cards__previous-song{
+            display: none;
+        }
+
+        .wrapper__cards__principal-song{
+            width: 280px;
+            height: 280px;
+        }
+    
+        .wrapper__cards__next-song{
+            @extend .wrapper__cards__previous-song;
+        }
+    }
+
+}

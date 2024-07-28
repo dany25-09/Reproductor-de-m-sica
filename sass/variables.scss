@@ -1,0 +1,18 @@
+$primary_color: #B2A4FF;
+$secondary_color: #FDF7C3;
+$font: "Inter", sans-serif;
+$shadow:    -5px -5px 10px rgba(255, 255, 255, 0.5),  /* Primera sombra */
+            -10px -10px 15px rgba(255, 255, 255, 0.5), /* Segunda sombra */
+            10px 10px 15px rgba(0, 0, 0, 0.25);        /* Tercera sombra */
+
+
+* { /* Se refiere a todos los elementos del html*/
+    box-sizing: border-box; /*incluir padding y border en el cálculo del tamaño total del elemento.*/
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+}
+
+html { /*se refiere al elemento raíz <html>*/
+    font-size: 62.5%;  /*1rem equivalente a 10 píxeles (px)*/
+}

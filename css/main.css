@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* Tercera sombra */
+* { /* Se refiere a todos los elementos del html*/
+  box-sizing: border-box; /*incluir padding y border en el cálculo del tamaño total del elemento.*/
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html { /*se refiere al elemento raíz <html>*/
+  font-size: 62.5%; /*1rem equivalente a 10 píxeles (px)*/
+}
+
+.wrapper {
+  background-color: #B2A4FF;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 300px auto auto;
+}
+.wrapper .wrapper__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .wrapper__header h1 {
+  font-size: 2.5rem;
+  color: #FDF7C3;
+  font-weight: 600;
+}
+.wrapper .wrapper__cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .wrapper__cards .wrapper__cards__previous-song, .wrapper .wrapper__cards .wrapper__cards__next-song, .wrapper .wrapper__cards .wrapper__cards__principal-song {
+  width: 32px;
+  height: 240px;
+  background-color: #B2A4FF;
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 7px -1px 10px rgba(255, 255, 255, 0.5), 4px -15px 15px rgba(255, 255, 255, 0.5), -10px 15px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+.wrapper .wrapper__cards .wrapper__cards__previous-song img, .wrapper .wrapper__cards .wrapper__cards__next-song img, .wrapper .wrapper__cards .wrapper__cards__principal-song img {
+  width: 90%;
+  height: 97%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0px 20px 20px 0px;
+}
+.wrapper .wrapper__cards .wrapper__cards__principal-song {
+  width: 240px;
+  border-radius: 20px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+}
+.wrapper .wrapper__cards .wrapper__cards__principal-song img {
+  width: 95%;
+  height: 90%;
+  border-radius: 20px;
+}
+.wrapper .wrapper__cards .wrapper__cards__next-song {
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.25);
+  justify-content: flex-end;
+}
+.wrapper .wrapper__cards .wrapper__cards__next-song img {
+  border-radius: 20px 0px 0px 20px;
+}
+.wrapper .wrapper__info-song {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.wrapper .wrapper__info-song .wrapper__info_song__text {
+  color: #FDF7C3;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.wrapper .wrapper__info-song .wrapper__info_song__text h2 {
+  font-weight: bolder;
+}
+.wrapper .wrapper__info-song .wrapper__info_song__text h3 {
+  font-weight: 600;
+}
+.wrapper .wrapper__info-song .wrapper__info-song__bar {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .wrapper__info-song .wrapper__info-song__bar .wrapper__info-song__bar__range {
+  height: 8px;
+  width: 100%;
+  accent-color: #FDF7C3;
+  border-radius: 20px;
+}
+.wrapper .wrapper__info-song .wrapper__info-song__bar .wrapper__info-song__bar__num {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.wrapper .wrapper__info-song .wrapper__info-song__bar .wrapper__info-song__bar__num p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #FDF7C3;
+}
+.wrapper .wrapper__buttons {
+  width: 100%;
+  max-width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.wrapper .wrapper__buttons .wrapper__buttons__button {
+  background-color: #B2A4FF;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.4), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25); /* Tercera sombra */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .wrapper__buttons .wrapper__buttons__button svg {
+  width: 75%;
+  height: 75%;
+  fill: #FDF7C3;
+}
+.wrapper .wrapper__buttons .wrapper__buttons__button.play {
+  width: 65px;
+  height: 65px;
+}
+.wrapper .wrapper__buttons .wrapper__buttons__button.play svg {
+  width: 55%;
+  height: 55%;
+}/*# sourceMappingURL=main.css.map */

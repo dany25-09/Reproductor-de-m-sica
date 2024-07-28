@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* Tercera sombra */
+* { /* Se refiere a todos los elementos del html*/
+  box-sizing: border-box; /*incluir padding y border en el cálculo del tamaño total del elemento.*/
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html { /*se refiere al elemento raíz <html>*/
+  font-size: 62.5%; /*1rem equivalente a 10 píxeles (px)*/
+}/*# sourceMappingURL=variables.css.map */
