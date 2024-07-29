@@ -11,13 +11,13 @@ html { /*se refiere al elemento raíz <html>*/
   font-size: 62.5%; /*1rem equivalente a 10 píxeles (px)*/
 }
 
-.wrapper .wrapper__cards {
+.wrapper__cards {
   justify-content: center;
 }
-.wrapper .wrapper__cards .wrapper__cards__previous-song, .wrapper .wrapper__cards .wrapper__cards__next-song {
+.wrapper__cards .card--previousSong, .wrapper__cards .card--nextSong {
   display: none;
 }
-.wrapper .wrapper__cards .wrapper__cards__principal-song {
+.wrapper__cards .card--principalSong {
   width: 280px;
   height: 280px;
 }/*# sourceMappingURL=tablet.css.map */

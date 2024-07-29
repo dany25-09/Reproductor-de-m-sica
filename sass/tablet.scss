@@ -2,21 +2,20 @@
 
 
 .wrapper{
-    .wrapper__cards{
+    &__cards{
         justify-content: center;
 
-        .wrapper__cards__previous-song{
+        .card--previousSong{
             display: none;
         }
 
-        .wrapper__cards__principal-song{
+        .card--principalSong{
             width: 280px;
             height: 280px;
         }
     
-        .wrapper__cards__next-song{
-            @extend .wrapper__cards__previous-song;
+        .card--nextSong{
+            @extend .card--previousSong;
         }
     }
-
 }

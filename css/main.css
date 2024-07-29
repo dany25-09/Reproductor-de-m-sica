@@ -19,24 +19,26 @@ html { /*se refiere al elemento raíz <html>*/
   grid-template-columns: 1fr;
   grid-template-rows: 60px 300px auto auto;
 }
-.wrapper .wrapper__header {
+
+.wrapper__header {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.wrapper .wrapper__header h1 {
+.wrapper__header .wrapper__h1 {
   font-size: 2.5rem;
   color: #FDF7C3;
   font-weight: 600;
 }
-.wrapper .wrapper__cards {
+
+.wrapper__cards {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.wrapper .wrapper__cards .wrapper__cards__previous-song, .wrapper .wrapper__cards .wrapper__cards__next-song, .wrapper .wrapper__cards .wrapper__cards__principal-song {
+.wrapper__cards .card--previousSong, .wrapper__cards .card--nextSong, .wrapper__cards .card--principalSong {
   width: 32px;
   height: 240px;
   background-color: #B2A4FF;
@@ -45,40 +47,41 @@ html { /*se refiere al elemento raíz <html>*/
   display: flex;
   align-items: center;
 }
-.wrapper .wrapper__cards .wrapper__cards__previous-song img, .wrapper .wrapper__cards .wrapper__cards__next-song img, .wrapper .wrapper__cards .wrapper__cards__principal-song img {
+.wrapper__cards .card--previousSong .card__image, .wrapper__cards .card--nextSong .card__image, .wrapper__cards .card--principalSong .card__image {
   width: 90%;
   height: 97%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0px 20px 20px 0px;
 }
-.wrapper .wrapper__cards .wrapper__cards__principal-song {
+.wrapper__cards .card--principalSong {
   width: 240px;
   border-radius: 20px;
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.25);
   justify-content: center;
 }
-.wrapper .wrapper__cards .wrapper__cards__principal-song img {
+.wrapper__cards .card--principalSong .card__image {
   width: 95%;
   height: 90%;
   border-radius: 20px;
 }
-.wrapper .wrapper__cards .wrapper__cards__next-song {
+.wrapper__cards .card--nextSong {
   border-radius: 20px 0px 0px 20px;
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.25);
   justify-content: flex-end;
 }
-.wrapper .wrapper__cards .wrapper__cards__next-song img {
+.wrapper__cards .card--nextSong .card__image {
   border-radius: 20px 0px 0px 20px;
 }
-.wrapper .wrapper__info-song {
+
+.wrapper__infoSong {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
-.wrapper .wrapper__info-song .wrapper__info_song__text {
+.wrapper__infoSong .infoSong__text {
   color: #FDF7C3;
   font-size: 1.5rem;
   display: flex;
@@ -86,36 +89,37 @@ html { /*se refiere al elemento raíz <html>*/
   align-items: center;
   justify-content: flex-start;
 }
-.wrapper .wrapper__info-song .wrapper__info_song__text h2 {
+.wrapper__infoSong .infoSong__text .infoSong__title {
   font-weight: bolder;
 }
-.wrapper .wrapper__info-song .wrapper__info_song__text h3 {
+.wrapper__infoSong .infoSong__text .infoSong__artist {
   font-weight: 600;
 }
-.wrapper .wrapper__info-song .wrapper__info-song__bar {
+.wrapper__infoSong .wrapper__songBar {
   width: 90%;
   max-width: 800px;
   display: flex;
   flex-direction: column;
 }
-.wrapper .wrapper__info-song .wrapper__info-song__bar .wrapper__info-song__bar__range {
+.wrapper__infoSong .wrapper__songBar .songBar__range {
   height: 8px;
   width: 100%;
   accent-color: #FDF7C3;
   border-radius: 20px;
 }
-.wrapper .wrapper__info-song .wrapper__info-song__bar .wrapper__info-song__bar__num {
+.wrapper__infoSong .wrapper__songBar .songBar__num {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 5px;
 }
-.wrapper .wrapper__info-song .wrapper__info-song__bar .wrapper__info-song__bar__num p {
+.wrapper__infoSong .wrapper__songBar .songBar__num .minutes {
   font-size: 1.3rem;
   font-weight: 600;
   color: #FDF7C3;
 }
-.wrapper .wrapper__buttons {
+
+.wrapper__buttons {
   width: 100%;
   max-width: 950px;
   display: flex;
@@ -123,7 +127,7 @@ html { /*se refiere al elemento raíz <html>*/
   justify-content: space-evenly;
   margin: 0 auto;
 }
-.wrapper .wrapper__buttons .wrapper__buttons__button {
+.wrapper__buttons .button {
   background-color: #B2A4FF;
   width: 45px;
   height: 45px;
@@ -133,16 +137,16 @@ html { /*se refiere al elemento raíz <html>*/
   align-items: center;
   justify-content: center;
 }
-.wrapper .wrapper__buttons .wrapper__buttons__button svg {
+.wrapper__buttons .button__svg {
   width: 75%;
   height: 75%;
   fill: #FDF7C3;
 }
-.wrapper .wrapper__buttons .wrapper__buttons__button.play {
+.wrapper__buttons .button__play {
   width: 65px;
   height: 65px;
 }
-.wrapper .wrapper__buttons .wrapper__buttons__button.play svg {
+.wrapper__buttons .button__play .button__svg {
   width: 55%;
   height: 55%;
 }/*# sourceMappingURL=main.css.map */

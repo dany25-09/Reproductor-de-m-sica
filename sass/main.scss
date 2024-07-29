@@ -7,27 +7,34 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 300px auto auto;
+}
 
-    .wrapper__header{
+// header
+.wrapper{
+    &__header{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        h1{
+        .wrapper__h1{
             font-size: 2.5rem;
             color: $secondary_color;
             font-weight: 600;
         }
     }
+}
 
-    .wrapper__cards{
+// cards
+.wrapper{
+
+    &__cards{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        .wrapper__cards__previous-song{
+        .card--previousSong{
             width: 32px;
             height: 240px;
             background-color: $primary_color;
@@ -38,7 +45,7 @@
             display: flex;
             align-items: center;
 
-            img{
+            .card__image{
                 width: 90%;
                 height: 97%;
                 object-fit: cover;
@@ -46,40 +53,44 @@
             }
         }
 
-        .wrapper__cards__principal-song{
-            @extend .wrapper__cards__previous-song;
+        .card--principalSong{
+            @extend .card--previousSong;
             width: 240px;
             border-radius: 20px;
             box-shadow: $shadow;
             justify-content: center;
 
-            img{
+            .card__image{
                 width: 95%;
                 height: 90%;
                 border-radius: 20px;
             }
         }
 
-        .wrapper__cards__next-song{
-            @extend .wrapper__cards__previous-song;
+        .card--nextSong{
+            @extend .card--previousSong;
             border-radius: 20px 0px 0px 20px;
             box-shadow: $shadow;
             justify-content: flex-end;
 
-            img{
+            .card__image{
                 border-radius: 20px 0px 0px 20px;
             }
         }
     }
+}
+
+// info
+.wrapper{
     
-    .wrapper__info-song{
+    &__infoSong{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
 
-        .wrapper__info_song__text{
+        .infoSong__text{
             color: $secondary_color;
             font-size: 1.5rem;
             display: flex;
@@ -87,35 +98,35 @@
             align-items: center;
             justify-content: flex-start;
 
-            h2{
+            .infoSong__title{
                 font-weight: bolder;
             }
 
-            h3{
+            .infoSong__artist{
                 font-weight: 600;
             }
         }
 
-        .wrapper__info-song__bar{
+        .wrapper__songBar{
             width: 90%;
             max-width: 800px;
             display: flex;
             flex-direction: column;
 
-            .wrapper__info-song__bar__range{
+            .songBar__range{
                 height: 8px;
                 width: 100%;
                 accent-color: $secondary_color;
                 border-radius: 20px;
             }
 
-            .wrapper__info-song__bar__num{
+            .songBar__num{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 margin-top: 5px;
     
-                p{
+                .minutes{
                     font-size: 1.3rem;
                     font-weight: 600;
                     color: $secondary_color;
@@ -123,8 +134,12 @@
             }
         }
     }
+}
 
-    .wrapper__buttons{
+//botones
+.wrapper{
+    
+    &__buttons{
         width: 100%;
         max-width: 950px;
         display: flex;
@@ -132,7 +147,7 @@
         justify-content: space-evenly;
         margin: 0 auto;
 
-        .wrapper__buttons__button{
+        .button{
             background-color: #B2A4FF;
             width: 45px;
             height: 45px;
@@ -144,18 +159,18 @@
             align-items: center;
             justify-content: center;
 
-            svg{
+            &__svg{
                 width: 75%;
                 height: 75%;
                 fill: $secondary_color;
             }
         }
 
-        .wrapper__buttons__button.play{
+        .button__play{
             width: 65px;
             height: 65px;
 
-            svg{
+            .button__svg{
                 width: 55%;
                 height: 55%;
             }
